@@ -23,7 +23,7 @@ fun StudentListScreen(students: List<Student>, onStudentClick: (Student) -> Unit
             }
         },
         update = {
-            (it.adapter as StudentAdapter).submitList(students.toList()) // Create a new list to trigger the DiffUtil
+            (it.adapter as StudentAdapter).submitList(students.toList())
         }
     )
 }

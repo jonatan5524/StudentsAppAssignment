@@ -25,8 +25,6 @@ import com.example.studentsapp.ui.screens.StudentListScreen
 class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
-        // This is a simple way to refresh the list when we come back to it.
-        // For a more robust solution, you might use a ViewModel.
         setContent {
             App()
         }

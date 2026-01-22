@@ -36,7 +36,6 @@ class StudentAdapter(
         holder.studentCheckbox.isChecked = currentStudent.isChecked
 
         holder.studentCheckbox.setOnCheckedChangeListener { _, isChecked ->
-            // To prevent issues with view recycling, we should only update the data model
             if (holder.adapterPosition != RecyclerView.NO_POSITION) {
                  getItem(holder.adapterPosition).isChecked = isChecked
             }
