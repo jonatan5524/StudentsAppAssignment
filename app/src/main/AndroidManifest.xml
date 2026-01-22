@@ -26,6 +26,14 @@
             android:name=".NewStudentActivity"
             android:label="New Student"
             android:theme="@style/Theme.StudentsApp" />
+        <activity
+            android:name=".StudentDetailsActivity"
+            android:label="Student Details"
+            android:theme="@style/Theme.StudentsApp" />
+        <activity
+            android:name=".EditStudentActivity"
+            android:label="Edit Student"
+            android:theme="@style/Theme.StudentsApp" />
     </application>
 
 </manifest>

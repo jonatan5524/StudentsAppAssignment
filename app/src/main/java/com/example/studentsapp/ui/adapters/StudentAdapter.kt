@@ -36,8 +36,8 @@ class StudentAdapter(
         holder.studentCheckbox.isChecked = currentStudent.isChecked
 
         holder.studentCheckbox.setOnCheckedChangeListener { _, isChecked ->
-            if (holder.adapterPosition != RecyclerView.NO_POSITION) {
-                 getItem(holder.adapterPosition).isChecked = isChecked
+            if (holder.bindingAdapterPosition != RecyclerView.NO_POSITION) {
+                 getItem(holder.bindingAdapterPosition).isChecked = isChecked
             }
         }
 

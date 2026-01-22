@@ -54,7 +54,11 @@ fun App() {
     ) { innerPadding ->
         StudentListScreen(
             students = Model.students,
-            onStudentClick = { student -> null },
+            onStudentClick = { student ->
+                val intent = Intent(context, StudentDetailsActivity::class.java)
+                intent.putExtra("student_pos", Model.students.indexOf(student))
+                context.startActivity(intent)
+            },
             modifier = Modifier.padding(innerPadding)
         )
     }
