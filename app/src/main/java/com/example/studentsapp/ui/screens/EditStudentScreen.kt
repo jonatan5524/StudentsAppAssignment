@@ -36,7 +36,7 @@ fun EditStudentScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
-                painter = painterResource(id = R.drawable.baseline_person_24),
+                painter = painterResource(id = android.R.drawable.ic_menu_myplaces),
                 contentDescription = "Student Avatar",
                 modifier = Modifier.size(100.dp)
             )

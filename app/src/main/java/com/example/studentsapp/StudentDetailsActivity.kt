@@ -2,12 +2,12 @@ package com.example.studentsapp
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
 import com.example.studentsapp.model.Model
 import com.example.studentsapp.ui.screens.StudentDetailsScreen
 
-class StudentDetailsActivity : AppCompatActivity() {
+class StudentDetailsActivity : ComponentActivity() {
 
     private var studentPosition: Int = -1
 
